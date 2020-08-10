@@ -68,22 +68,22 @@
 
           <div class="tehnology__item">
             <h3 class="tehnology__name">HTML</h3>
-            <img src="<%=require('./images/html-tehnology.svg')%>" alt="" class="tehnology__image">
+            <img src="<%=require('./images/html-tehnology.svg')%>" alt="иконка html 5" class="tehnology__image">
           </div>
 
           <div class="tehnology__item">
             <h3 class="tehnology__name">CSS</h3>
-            <img src="<%=require('./images/css-tehnology.svg')%>" alt="" class="tehnology__image">
+            <img src="<%=require('./images/css-tehnology.svg')%>" alt="иконка css 3" class="tehnology__image">
           </div>
 
           <div class="tehnology__item">
             <h3 class="tehnology__name">Java Script</h3>
-            <img src="<%=require('./images/js-tehnology.svg')%>" alt="" class="tehnology__image">
+            <img src="<%=require('./images/js-tehnology.svg')%>" alt="иконка java script" class="tehnology__image">
           </div>
 
           <div class="tehnology__item">
             <h3 class="tehnology__name">Webpack</h3>
-            <img src="<%=require('./images/webpack-tehnology.svg')%>" alt="" class="tehnology__image">
+            <img src="<%=require('./images/webpack-tehnology.svg')%>" alt="иконка webpack" class="tehnology__image">
           </div>
 
         </div>
@@ -91,11 +91,10 @@
     </section>
 
     <section class="about-author page__about-author">
-      <!--       <img src="<%=require('./images/desctop-avatar.png')%>" class="about-author__avatar" alt="аватар автора"> -->
 
       <picture class="about-author__avatar">
         <source srcset="<%=require('./images/desctop-avatar.png')%>" media="(min-width: 770px)">
-        <img class="about-author__avatar-mobile" src="<%=require('./images/mobile-avatar.png')%>" alt="аватар автора" />
+        <img class="about-author__avatar-mobile" src="<%=require('./images/mobile-avatar.png')%>" alt="фотаграфия студента" />
       </picture>
 
       <div class="about-author__info-wrapper">
@@ -115,7 +114,7 @@
 
       <div class="history__head-wraapper">
         <h2 class="section-title history__section-title">История коммитов из GitHub</h2>
-        <a href="#" class="link">Открыть в Github ></a>
+        <a href="https://github.com/" class="link" target="_blank">Открыть в Github ></a>
       </div>
 
       <div class="commits">
@@ -209,8 +208,8 @@
         </ul>
       </nav>
       <div class="footer__links">
-        <div class="footer__link-git"></div>
-        <div class="footer__link-facebook"></div>
+        <a href="https://github.com/" target="_blank" class=""><div class="footer__link-git"></div></a>
+        <a href="https://www.facebook.com/" target="_blank" class=""><div class="footer__link-facebook"></div></a>
       </div>
     </footer>
   </div>

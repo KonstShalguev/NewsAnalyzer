@@ -67,7 +67,7 @@
     <section class="results page__results">
       <div class="resuts__link-wraapper">
 
-        <h2 class="section-title">Результаты поиска</h2>
+        <h2 class="section-title result__section-title">Результаты поиска</h2>
         
         <a href="./analytics.html" class="results__link-analytics">Посмотреть аналитику ></a>
       </div>
@@ -162,11 +162,9 @@
 
     <section class="about-author page__about-author">
 
-      <!--  <img src="<%=require('./images/desctop-avatar.png')%>" class="about-author__avatar" alt="аватар автора"> -->
-
       <picture class="about-author__avatar">
         <source srcset="<%=require('./images/desctop-avatar.png')%>" media="(min-width: 770px)">
-        <img class="about-author__avatar-mobile" src="<%=require('./images/mobile-avatar.png')%>" alt="аватар автора" />
+        <img class="about-author__avatar-mobile" src="<%=require('./images/mobile-avatar.png')%>" alt="фотография студента" />
       </picture>
 
       <div class="about-author__info-wrapper">
@@ -193,8 +191,8 @@
         </ul>
       </nav>
       <div class="footer__links">
-        <div class="footer__link-git"></div>
-        <div class="footer__link-facebook"></div>
+        <a href="https://github.com/" target="_blank" class=""><div class="footer__link-git"></div></a>
+        <a href="https://www.facebook.com/" target="_blank" class=""><div class="footer__link-facebook"></div></a>
       </div>
     </footer>
 

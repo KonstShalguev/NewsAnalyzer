@@ -75,7 +75,6 @@
 }
 
 .chart__table-column {
-    /*   border: 1px solid red; */
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -84,7 +83,6 @@
 }
 
 .chart__percent-items {
-    /*   border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -255,63 +253,7 @@
     .request {
         width: 92%;
     }
-    
-
-    /* хедр */
-   /*  .header__content-wrapper {
-        max-width: 92%;
-        height: 56px;
-    }
-
-    .logo {
-        font-family: Roboto Slab;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
-
-        display: flex;
-        align-items: center;
-
-
-        color: #1A1B22;
-
-        padding-bottom: 18px;
-    }
-
-    .header__link {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        color: #B6BCBF;
-
-        padding-bottom: 18px;
-    }
-
-    .header {
-        min-height: 56px;
-    }
-
-    .header__nav-item {
-        padding-bottom: 0;
-        margin-left: 12px;
-    }
-
-    .header__nav-items {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header__content-wrapper {
-        min-height: 56px;
-    } */
+ 
 
 /* крошки */
     .request__bread-crumbs {
@@ -332,54 +274,6 @@
 
 /*768 1339*/
 @media screen and (min-width: 768px) and (max-width: 1339px) {
-
-    /* хэдр */
-/*     .header__content-wrapper {
-        max-width: 89%;
-        min-height: 64px;
-    }
-
-    .logo {
-        padding-bottom: 10px;
-    }
-
-    .header__link {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-
-
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        color: #B6BCBF;
-
-        padding-bottom: 10px;
-    }
-
-    .header {
-        min-height: 64px;
-    }
-
-    .header__nav-item {
-        padding-bottom: 0;
-        margin-left: 35px;
-    }
-
-    .header__nav-items {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header__content-wrapper {
-        min-height: 56px;
-    } */
-
-
-
 
     /* запрос */
     .request {
