@@ -1,0 +1,392 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/footer/footer.css);
+.request {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.page__request {
+    margin-top: 40px;
+    margin-bottom: 83px;
+}
+
+.request__section-title {
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+.request__text-items {
+    padding: 0;
+}
+
+.request__text-item {
+    list-style: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
+
+.request__span-accent {
+    font-weight: bold;
+}
+
+/* график */
+
+.chart {
+    margin: 0 auto;
+    /* не тут */
+    height: 866px;
+    background-color: #F5F6F7;
+}
+
+.chart__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    margin-top: 20px;
+    margin-bottom: 46px;
+}
+
+.chart__content-wrapper {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.chart__table-row {
+    display: grid;
+    grid-template-columns: 104px auto;
+    /*  border: 1px solid red; */
+    margin-bottom: 59px;
+}
+
+.chart__table-row-precent {
+    margin-bottom: 7px;
+}
+
+.chart__table-column {
+    /*   border: 1px solid red; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #1A1B22;
+}
+
+.chart__percent-items {
+    /*   border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.chart__scale {
+    height: 100%;
+    background-color: #2F71E5;
+    width: 34%;
+}
+
+.chart__percent-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    list-style-type: none;
+    margin: 13px 0;
+}
+
+.chart__scale-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.chart__table-title {
+    display: grid;
+    grid-template-columns: 104px auto;
+}
+
+.chart__table-column-date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    max-width: 80px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.chart__table-column-scale {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin: 0;
+}
+
+.chart__table-title {
+    border-bottom: 1px solid #1A1B22;
+}
+
+.chart__scale_monday {
+    width: 34%;
+}
+
+.chart__scale_tuesday {
+    width: 15%;
+}
+
+.chart__scale_wednesday {
+    width: 18%;
+}
+
+.chart__scale_thursday {
+    width: 21%;
+}
+
+.chart__scale_friday {
+    width: 39%;
+}
+
+.chart__scale_saturday {
+    width: 73%;
+}
+
+.chart__scale_sunday {
+    width: 24%;
+}
+
+.chart__table-row_last-row {
+    margin-bottom: 0;
+}
+
+.request__bread-crumbs {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    text-decoration: none;
+}
+
+.request__bread-crumbs:after {
+    content: ' / Аналитика';
+    color: #B6BCBF;
+}
+
+
+/*320 767*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /* график */
+    .chart__content-wrapper {
+        width: 92%;
+    }
+
+    .chart__table-row-precent {
+        display: none;
+    }
+
+    .chart {
+        height: 478px;
+    }
+
+    .chart__table-row {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .chart__content-wrapper {
+        padding-top: 5px;
+    }
+
+    .chart__title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+
+        color: #1A1B22;
+        margin-bottom: 15px;
+    }
+
+    .chart__table-title {
+        grid-template-columns: 82px auto;
+    }
+
+    .chart__table-row {
+        grid-template-columns: 82px auto;
+    }
+
+    .request {
+        width: 92%;
+    }
+    
+
+    /* хедр */
+   /*  .header__content-wrapper {
+        max-width: 92%;
+        height: 56px;
+    }
+
+    .logo {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+
+        display: flex;
+        align-items: center;
+
+
+        color: #1A1B22;
+
+        padding-bottom: 18px;
+    }
+
+    .header__link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #B6BCBF;
+
+        padding-bottom: 18px;
+    }
+
+    .header {
+        min-height: 56px;
+    }
+
+    .header__nav-item {
+        padding-bottom: 0;
+        margin-left: 12px;
+    }
+
+    .header__nav-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__content-wrapper {
+        min-height: 56px;
+    } */
+
+/* крошки */
+    .request__bread-crumbs {
+        display: none;
+    }
+
+    .request__section-title {
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+
+    .page__request {
+        margin-bottom: 26px;
+    }
+}
+
+
+
+/*768 1339*/
+@media screen and (min-width: 768px) and (max-width: 1339px) {
+
+    /* хэдр */
+/*     .header__content-wrapper {
+        max-width: 89%;
+        min-height: 64px;
+    }
+
+    .logo {
+        padding-bottom: 10px;
+    }
+
+    .header__link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #B6BCBF;
+
+        padding-bottom: 10px;
+    }
+
+    .header {
+        min-height: 64px;
+    }
+
+    .header__nav-item {
+        padding-bottom: 0;
+        margin-left: 35px;
+    }
+
+    .header__nav-items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header__content-wrapper {
+        min-height: 56px;
+    } */
+
+
+
+
+    /* запрос */
+    .request {
+        width: 89%;
+    }
+
+    .chart__content-wrapper {
+        width: 89%;
+    }
+}

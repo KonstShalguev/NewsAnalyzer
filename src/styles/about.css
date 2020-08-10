@@ -1,0 +1,401 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/about-author/about-author.css);
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/footer/footer.css);
+/* секция клиентам */
+
+.page__clients {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.clients__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin: 80px 0 22px;
+}
+
+.clients__paragraph-wrapper {
+    max-width: 815px;
+}
+
+.clients__paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin: 24px 0;
+}
+
+/* секция технологии */
+
+.page__technology {
+    background-color: #f5f6f7;
+    width: 100%;
+    min-height: 334px;
+}
+
+.page__technology {
+    margin: 0 auto;
+    margin-top: 94px;
+}
+
+.technology__container {
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+
+.tehnology__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    max-width: 344px;
+    margin-top: 80px;
+}
+
+.tehnology__flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-top: 80px;
+}
+
+.tehnology__name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #1A1B22;
+    margin-bottom: 5px;
+}
+
+/* секция гитхаб */
+
+.history__section-title {
+    margin-top: 74px;
+    margin-bottom: 63px;
+}
+
+.history {
+    background-color: #F5F6F7;
+    min-height: 606px;
+}
+
+
+.link {
+    /* куда её положить-то */
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
+
+.history__head-wraapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
+    align-items: first baseline;
+}
+
+/* карусель */
+
+.commits {
+    width: 100%;
+    min-height: 288px;
+    /*  border: 1px solid red; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.commits:before {
+    content: "";
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #FFFFFF 0%, transparent 100%);
+}
+
+.commits:after {
+    content: "";
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(270deg, #FFFFFF 0%, transparent 100%);
+    /* border: 1px solid red; */
+}
+
+.commits__content-wrapper {
+    /* удалить после прикрутки слайдера */
+    display: grid;
+    grid-template-columns: repeat(5, 400px);
+    scrollbar-width: none;
+    overflow: auto;
+    justify-content: center;
+    grid-column-gap: 16px;
+    margin: 0 auto;
+}
+
+.commit {
+    padding: 24px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 400px;
+    min-height: 288px;
+    /*     border: 1px solid red; */
+    display: grid;
+    grid-template-areas: "commit__date commit__date" "commit__avatar commit__author-info" "commit__author-comment commit__author-comment";
+}
+
+.commit__date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin-top: 0;
+    grid-area: commit__date;
+    /*     border: 1px solid red; */
+    margin: 0;
+    max-height: 25px;
+    margin-bottom: 5px;
+}
+
+.commit__author-info {
+    grid-area: commit__author-info;
+    min-width: 260px;
+    height: 100%;
+    padding-top: 7px;
+}
+
+.commit__avatar {
+    background-image: url(../images/avatar.png);
+    width: 64px;
+    height: 64px;
+    grid-area: commit__avatar;
+    /*     border: 1px solid red; */
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.commit__author-name {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    grid-area: commit__author-name;
+    /*     border: 1px solid red; */
+    margin: 0;
+}
+
+.commit__author-email {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1A1B22;
+    grid-area: commit__author-email;
+    /*     border: 1px solid red; */
+    margin: 0;
+}
+
+.commit__author-comment {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    grid-area: commit__author-comment;
+    /*     border: 1px solid red; */
+    margin: 0;
+    padding-bottom: 45px;
+}
+
+.page__about-footer {
+    margin-top: 15px;
+}
+
+/*320 767*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .page__clients {
+        width: 89%;
+    }
+
+    .clients__title {
+        margin: 16px 0 16px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    /* технологии */
+    .tehnology__title {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .page__technology {
+        width: 100%;
+        margin: 40px auto 0;
+    }
+
+    .technology__container {
+        width: 89%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .tehnology__flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    /* гитхаб */
+    .history {
+        min-height: 568px;
+    }
+
+    .history__head-wraapper {
+        width: 89%;
+        flex-direction: column;
+    }
+
+    .history__section-title {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .commit {
+        padding: 16px;
+        background: #fff;
+        border-radius: 16px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 264px;
+        height: 288px;
+    }
+
+    .commit__author-comment {
+        max-width: 220px;
+    }
+
+    .commits {
+        margin-top: 20px;
+    }
+
+    .commits:before {
+        content: "";
+        display: none;
+    }
+
+    .commits:after {
+        content: "";
+        display: none;
+    }
+
+    .commit__author-name {
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1A1B22;
+        max-width: 220px;
+    }
+
+    .commit__avatar {
+        background-image: url(../images/avatar.png);
+        width: 48px;
+        height: 48px;
+        grid-area: commit__avatar;
+        margin: 0 10px 13px;
+        background-size: cover;
+    }
+
+    .commit__author-info {
+        padding-top: 0;
+    }
+}
+
+
+
+/*768 1339*/
+@media screen and (min-width: 768px) and (max-width: 1339px) {
+    .commits:before {
+        content: "";
+        display: none;
+    }
+
+    .commits:after {
+        content: "";
+        display: none;
+    }
+
+    .page__clients {
+        margin: 0 auto;
+        width: 89%;
+    }
+
+    .history__head-wraapper {
+        width: 89%;
+    }
+
+    .history__section-title {
+        max-width: 400px;
+    }
+
+    .technology__container {
+        width: 89%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tehnology__flex-wrapper {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .tehnology__title {
+        margin-top: 40px;
+    }
+        
+}

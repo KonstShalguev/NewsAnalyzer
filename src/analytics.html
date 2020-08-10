@@ -11,13 +11,146 @@
     
 </head>
 <body>
-  
+  <div class="page">
+    <!-- хэдр -->
+    <header class="header header_dark-theme">
+      <div class="header__content-wrapper">
+        <h1 class="logo logo_dark-theme">NewsAnalyzer</h1>
+        <nav class="header__nav">
+          <ul class="header__nav-items">
+            <li class="header__nav-item"><a href="./index.html" class="header__link">Главная</a></li>
+            <li class="header__nav-item"><a href="./about.html" class="header__link">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- аналитика -->
+    <section class="request page__request">
+      <a href="./index.html" class="request__bread-crumbs">Главная</a>
+      <h2 class="section-title request__section-title">Вы спросили: «Путешествия»</h2>
+      <ul class="request__text-items">
+        <li class="request__text-item">Новостей за неделю: <span class="request__span-accent">34 324</span></li>
+        <li class="request__text-item">Упоминаний в загаловках: <span class="request__span-accent">235</span></li>
+      </ul>
+    </section>
+
+    <section class="chart page__chart">
+      <div class="chart__content-wrapper">
+        <h3 class="chart__title">Аналитика по дням</h3>
+        
+      <div class="chart__tabel">
+
+        <div class="chart__table-title">
+          <h3 class="chart__table-column-date">Дата (август)</h3>
+          <h3 class="chart__table-column-scale">Кол-во упоминаний</h3>
+        </div>
+
+        
+        <div class="chart__table-row chart__table-row-precent">
+          <div class="chart__table-column"></div>
+          <ul class="chart__percent-items">
+            <li class="chart__percent-item">0</li>
+            <li class="chart__percent-item">25</li>
+            <li class="chart__percent-item">50</li>
+            <li class="chart__percent-item">75</li>
+            <li class="chart__percent-item">100</li>
+          </ul>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">21, пн</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_monday">
+              <span class="chart__scale-number">34</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">22, вт</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_tuesday">
+              <span class="chart__scale-number">15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">23, ср</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_wednesday">
+              <span class="chart__scale-number">18</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">24, чт</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_thursday">
+              <span class="chart__scale-number">21</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">25, пт</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_friday">
+              <span class="chart__scale-number">39</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row">
+          <div class="chart__table-column">26, сб</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_saturday">
+              <span class="chart__scale-number">73</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart__table-row chart__table-row_last-row">
+          <div class="chart__table-column">27, вс</div>
+          <div class="chart__table-column">
+            <div class="chart__scale chart__scale_sunday">
+              <span class="chart__scale-number">24</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="chart__table-row chart__table-row-precent">
+          <div class="chart__table-column"></div>
+          <ul class="chart__percent-items">
+            <li class="chart__percent-item">0</li>
+            <li class="chart__percent-item">25</li>
+            <li class="chart__percent-item">50</li>
+            <li class="chart__percent-item">75</li>
+            <li class="chart__percent-item">100</li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer page__footer">
+      <p class="footer__copyright">&copy; 2020 Supersite</p>
+      <nav class="footer__nav">
+        <ul class="footer__nav-items">
+                <li class="footer__nav-item"><a href="./index.html" class="footer__link">Главная</a></li>
+                <li class="footer__nav-item"><a href="./about.html" class="footer__link">О проекте</a></li>
+                <li class="footer__nav-item"><a href="https://praktikum.yandex.ru" target="_blank" class="footer__link">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <div class="footer__links">
+        <div class="footer__link-git"></div>
+        <div class="footer__link-facebook"></div>
+      </div>
+    </footer>
+  </div>
   <script src="<%=htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>
-
-
-
-<!--
-
--->
