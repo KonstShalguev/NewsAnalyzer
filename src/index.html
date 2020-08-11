@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>NewsAnalyzer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дипломная работа Яндекс.Практикум">
+  <meta name="author" content="Шалгуев Константин">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
+  <link rel="shortcut icon" href="<%=require('./images/a.png')%>" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="page">
+
+    <!--Секция search-->
+    <section class="search page__search">
+
+      <header class="header search__header">
+        <div class="header__content-wrapper">
+          <h1 class="logo">NewsAnalyzer</h1>
+          <nav class="header__nav">
+            <ul class="header__nav-items">
+              <li class="header__nav-item header__nav-item_active"><a href="./index.html"
+                  class="header__link header__link_active">Главная</a></li>
+              <li class="header__nav-item "><a href="./about.html" class="header__link">О проекте</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="search__wrapper-form">
+        <h2 class="search__title">Что в&nbsp;мире творится?</h2>
+        <p class="search__subtitle">
+          Введите в&nbsp;поиске любую тему и&nbsp;узнайте, насколько популярной она была в&nbsp;новостях
+          за&nbsp;прошедшую неделю.
+        </p>
+
+        <form class="search__form">
+          <input class="input__search" type="text" placeholder="Введите тему новости">
+          <button class="search__form-button" type="submit">Искать</button>
+        </form>
+
+      </div>
+    </section>
+
+
+    <!--загрузка-->
+    <div class="preloader">
+      <i class="circle-preloader"></i>
+      <p class="preloader__text">Идет поиск новостей...</p>
+    </div>
+
+    <!--ничего не найдено-->
+    <div class="not-found">
+      <div class="not-found__img"></div>
+      <h2 class="not-found__title">Ничего не найдено</h2>
+      <p class="not-found__text">
+        К&nbsp;сожалению по&nbsp;вашему запросу
+        ничего не&nbsp;найдено.
+      </p>
+    </div>
+
+    <!--секция результатов-->
+    <section class="results page__results">
+      <div class="resuts__link-wraapper">
+
+        <h2 class="section-title result__section-title">Результаты поиска</h2>
+        
+        <a href="./analytics.html" class="results__link-analytics">Посмотреть аналитику ></a>
+      </div>
+      <div class="results__cards">
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <p class="card__date">2 августа, 2019</p>
+          <h2 class="card__title">
+            Лесные огоньки: история одной фотографии
+          </h2>
+          <p class="card__paragraph">
+            Фотограф отвлеклась от освещения суровой политической реальности
+            Мексики, чтобы запечатлеть ускользающую красоту одного
+            из местных чудес природы.
+          </p>
+          <h3 class="card__source">Медуза</h3>
+        </div>
+      </div>
+      <button class="results__button-show-more">Показать еще</button>
+
+    </section>
+
+    <section class="about-author page__about-author">
+
+      <picture class="about-author__avatar">
+        <source srcset="<%=require('./images/desctop-avatar.png')%>" media="(min-width: 770px)">
+        <img class="about-author__avatar-mobile" src="<%=require('./images/mobile-avatar.png')%>" alt="фотография студента" />
+      </picture>
+
+      <div class="about-author__info-wrapper">
+        <h2 class="about-author__title">Об авторе</h2>
+        <p class="about-author__paragraph">
+          Это блок с&nbsp;описанием автора проекта. Здесь следует указать, как вас зовут, чем вы&nbsp;занимаетесь,
+          какими технологиями разработки владеете.
+        </p>
+        <p class="about-author__paragraph">
+          Также можно рассказать о&nbsp;процессе обучения в&nbsp;Практикуме, чему вы&nbsp;тут научились, и&nbsp;чем
+          можете помочь потенциальным заказчикам.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer page__footer">
+      <p class="footer__copyright">&copy; 2020 Supersite</p>
+      <nav class="footer__nav">
+        <ul class="footer__nav-items">
+          <li class="footer__nav-item"><a href="./index.html" class="footer__link">Главная</a></li>
+          <li class="footer__nav-item"><a href="./about.html" class="footer__link">О проекте</a></li>
+          <li class="footer__nav-item"><a href="https://praktikum.yandex.ru" target="_blank"
+              class="footer__link">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+      <div class="footer__links">
+        <a href="https://github.com/" target="_blank" class=""><div class="footer__link-git"></div></a>
+        <a href="https://www.facebook.com/" target="_blank" class=""><div class="footer__link-facebook"></div></a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="<%=htmlWebpackPlugin.files.js%>"></script>
+</body>
+
+</html>
