@@ -242,7 +242,7 @@
     background: #FFFFFF;
     border-radius: 16px;
     box-sizing: border-box;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 400px;
     min-height: 288px;
     display: grid;
@@ -258,7 +258,6 @@
     color: #B6BCBF;
     margin-top: 0;
     grid-area: commit__date;
-    /*     border: 1px solid red; */
     margin: 0;
     max-height: 25px;
     margin-bottom: 5px;
@@ -276,7 +275,6 @@
     width: 64px;
     height: 64px;
     grid-area: commit__avatar;
-    /*     border: 1px solid red; */
     margin: 0;
     margin-bottom: 13px;
 }
@@ -289,7 +287,6 @@
     line-height: 30px;
     color: #1A1B22;
     grid-area: commit__author-name;
-    /*     border: 1px solid red; */
     margin: 0;
 }
 
@@ -301,7 +298,6 @@
     line-height: 22px;
     color: #1A1B22;
     grid-area: commit__author-email;
-    /*     border: 1px solid red; */
     margin: 0;
 }
 
@@ -313,7 +309,6 @@
     line-height: 22px;
     color: #1A1B22;
     grid-area: commit__author-comment;
-    /*     border: 1px solid red; */
     margin: 0;
     padding-bottom: 45px;
 }
@@ -411,6 +406,7 @@
     .swiper-slide {
         height: 264px;
     }
+    
 
 
 
@@ -449,6 +445,18 @@
 
     .commit__author-info {
         padding-top: 0;
+    }
+
+
+
+    
+
+    .commit__date {
+        margin-left:25px;
+    }
+
+    .commit__avatar {
+        margin-left:25px;
     }
 }
 
@@ -492,12 +500,6 @@
 
     .tehnology__title {
         margin-top: 40px;
-    }
-
-
-
-    .commit__date {
-        margin: 0 0 5px 25px;
     }
         
 }

@@ -9,7 +9,7 @@ import '../../node_modules/swiper/swiper-bundle.min.css';
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: "auto",
     spaceBetween: 16,
-    //centeredSlides: true,
+    centeredSlides: true,
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -20,3 +20,6 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.commits__button-prev',
     },
 });
+
+
+console.log('norm');
