@@ -267,7 +267,8 @@
     grid-area: commit__author-info;
     min-width: 260px;
     height: 100%;
-    padding-top: 7px;
+    padding-top: 26px;
+    padding-left: 18px;
 }
 
 .commit__avatar {
@@ -443,9 +444,10 @@
         background-size: cover;
     }
 
-    .commit__author-info {
-        padding-top: 0;
-    }
+ /*    .commit__author-info {
+        padding-top: 26px;
+        padding-left: 18px;
+    } */
 
 
 
