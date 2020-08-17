@@ -278,6 +278,8 @@
     grid-area: commit__avatar;
     margin: 0;
     margin-bottom: 13px;
+    background-size: cover;
+    border-radius: 100%;
 }
 
 .commit__author-name {
