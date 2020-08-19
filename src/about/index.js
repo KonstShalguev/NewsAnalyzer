@@ -8,7 +8,7 @@ import '../../node_modules/swiper/swiper-bundle.min.css';
 
 
 //js классы
-import {GithubApi} from '../js/modules/GithubApi/GithubApi';
+import {GithubApi} from '../js/modules/GithubApi';
 import {CommitCard} from '../js/components/CommitCard';
 import {CommitCardList} from '../js/components/CommitCardList';
 
@@ -19,8 +19,8 @@ import {dateFormatting} from '../js/utils/utils';
 
 //колбэк функция создания карточки коммита
 const newCommit = (name, email, date, message, avatar) => {
-    const commit = new CommitCard(name, email, date, message, avatar);
-    return commit.create();
+    const commitCard = new CommitCard(name, email, date, message, avatar);
+    return commitCard.create();
 }
 
 const сommitCardList = new CommitCardList(document.querySelector('.commits__content-wrapper'), newCommit);
