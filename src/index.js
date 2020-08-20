@@ -6,35 +6,38 @@ import { NewsCard } from './js/components/NewsCard';
 import { NewsCardList } from './js/components/NewsCardList'
 
 import { DataStorage } from './js/modules/DataStorage';
+import { SearchInput } from './js/components/SearchInput'; //класс формы
 
 import { NEWS_API_KEY, CURRENT_DATE, DATE_WEEK_AGO } from './js/constants/constants';
 
 const newsApi = new NewsApi(NEWS_API_KEY, CURRENT_DATE, DATE_WEEK_AGO);
 const dataStorage = new DataStorage();
+//...................................................................................................
+const formSearch = document.querySelector('.search__form');
+const searchInput = new SearchInput(formSearch);
 
+searchInput.setEventListeners()
+//...................................................................................................
 
 //пробный запуск
-const input = document.querySelector('.input__search');
-const button = document.querySelector('.search__form-button');
+/* const inputSearch = document.querySelector('.input__search');
+const buttonSearch = document.querySelector('.search__form-button');
 
-button.addEventListener('click', function (event) {
+buttonSearch.addEventListener('click', function (event) {
     event.preventDefault();
 
-    newsApi.getNews(input.value)
+    newsApi.getNews(inputSearch.value)
         .then(res => {
             dataStorage.setItem('newsCard', res);
         })
-
 })
+ */
 
 
+const buttonShowMore = document.querySelector('.results__button-show-more')
 
-
-
-
-
-document.querySelector('.results__button-show-more').addEventListener('click', function (event) {
-    event.preventDefault();
+buttonShowMore.addEventListener('click', function (event) {
+    //event.preventDefault();
 
     //берем массив из LS
     const arrayWithCards = JSON.parse(dataStorage.getItem('newsCard'));
@@ -57,17 +60,11 @@ document.querySelector('.results__button-show-more').addEventListener('click', f
         newsCardList.render(renderNow)
         //...........................................................................
 
-        //const copyCo = [];
-
         renderNow.forEach(function (item) {
-            //copyCo.push(item);
-            const newData = JSON.parse(dataStorage.getItem('renderAfterReboot'));
-            newData.push(item);
-            dataStorage.setItem('renderAfterReboot', newData);
+            const arrayRenderedCard = JSON.parse(dataStorage.getItem('renderAfterReboot'));
+            arrayRenderedCard.push(item);
+            dataStorage.setItem('renderAfterReboot', arrayRenderedCard);
         })
-
-        //const newMas = JSON.parse(dataStorage.getItem('renderAfterReboot')).concat(copyCo);
-        //dataStorage.setItem('renderAfterReboot', newMas);
 
         dataStorage.setItem('newsCard', arrayWithCards);
     }
