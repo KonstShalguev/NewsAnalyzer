@@ -12,20 +12,5 @@ export class NewsCardList {
         for (const elem of array) {
             this.addCard(elem.urlToImage, elem.title, elem.publishedAt, elem.description, elem.source.name)
         }
-    }
-        
+    }      
 }
-
-/* 
-
-
-
-
-elem.source.name - источник
-elem.publishedAt - дата
-elem.title -заголовок
-elem.description - текст
-elem.urlToImage - картинка
-
-elem.url - ссылка на статью
-*/

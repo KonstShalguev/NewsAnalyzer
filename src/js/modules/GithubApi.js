@@ -1,7 +1,9 @@
 export class GithubApi {
-
+  constructor(baseUrl){
+    this.baseUrl = baseUrl;
+  }
   getCommits() {
-    return fetch('https://api.github.com/repos/KonstShalguev/NewsAnalyzer/commits') //адрес сделать константой
+    return fetch(`${this.baseUrl}`)
       .then((res) => {
         if(res.ok){
           return res.json();

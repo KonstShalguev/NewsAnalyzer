@@ -7,18 +7,16 @@ const dataStorage = new DataStorage();
 const newsForWeek = document.querySelector('.news-for-week');
 const youAsk = document.querySelector('.request__you-ask');
 const worckArray = JSON.parse(dataStorage.getItem('newsCardCopy'));
+const objDate = {}
+const howMach = [];
 
 newsForWeek.textContent = worckArray.totalResults;
 youAsk.textContent = JSON.parse(dataStorage.getItem('keyWord'));
 
-
-const objDate = {}
-const howMach = [];
-
 function counter(mass) {
     let count = 0;
     mass.forEach((item)=>{
-        const date = item.publishedAt.split('T')[0];  //получаем дату
+        const date = item.publishedAt.split('T')[0];  //получаем и обрезаем дату
         howMach.push(date);
 
         if(objDate[date] == undefined) { 

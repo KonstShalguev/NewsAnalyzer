@@ -7,15 +7,11 @@ Swiper.use([Navigation, Pagination]);
 import '../../node_modules/swiper/swiper-bundle.min.css';
 
 
-//js классы
 import {GithubApi} from '../js/modules/GithubApi';
 import {CommitCard} from '../js/components/CommitCard';
 import {CommitCardList} from '../js/components/CommitCardList';
-
-//утилиты
 import {dateFormatting} from '../js/utils/utils';
-
-
+import { GITHUB_API_URL } from '../js/constants/constants';
 
 //колбэк функция создания карточки коммита
 const newCommit = (name, email, date, message, avatar) => {
@@ -24,13 +20,12 @@ const newCommit = (name, email, date, message, avatar) => {
 }
 
 const сommitCardList = new CommitCardList(document.querySelector('.commits__content-wrapper'), newCommit);
-const githubApi = new GithubApi();
+const githubApi = new GithubApi(GITHUB_API_URL);
 
 githubApi.getCommits()
     .then((res) => {
         сommitCardList.render(res);
     })
-    //где его активировать?
     .then(()=>{
         const swiper = new Swiper('.swiper-container', {
             slidesPerView: "auto",
@@ -50,8 +45,3 @@ githubApi.getCommits()
     .catch(err => {
         console.log(err)
     })
-
-
-/* мусорка с мусором
-    
-*/

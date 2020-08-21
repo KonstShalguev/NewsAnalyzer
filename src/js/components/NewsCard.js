@@ -18,7 +18,7 @@ export class NewsCard {
             <h2 class="card__title"></h2>
             <p class="card__paragraph"></p>
             <h3 class="card__source"></h3>
-        `);//нужно экранировать это. смотри в домашней работе
+        `);
 
         card.querySelector('.card__paragraph').textContent = `${this.description}`;
         card.querySelector('.card__img').style.backgroundImage = `url(${this.imgUrl})`;

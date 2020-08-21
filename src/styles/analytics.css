@@ -161,31 +161,31 @@
 }
 
 .chart__scale_monday {
-    width: 34%;
+    width: 0%;
 }
 
 .chart__scale_tuesday {
-    width: 15%;
+    width: 0%;
 }
 
 .chart__scale_wednesday {
-    width: 18%;
+    width: 0%;
 }
 
 .chart__scale_thursday {
-    width: 21%;
+    width: 0%;
 }
 
 .chart__scale_friday {
-    width: 39%;
+    width: 0%;
 }
 
 .chart__scale_saturday {
-    width: 73%;
+    width: 0%;
 }
 
 .chart__scale_sunday {
-    width: 24%;
+    width: 0%;
 }
 
 .chart__table-row_last-row {

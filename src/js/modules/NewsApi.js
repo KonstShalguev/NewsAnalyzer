@@ -15,9 +15,3 @@ export class NewsApi {
             })
     }
 }
-
-/*
-https://nomoreparties.co/news/v2/everything?  <<---
-
-http://newsapi.org/v2/everything?from=${this.dateFrom}&to=${this.dateTo}&apiKey=${this.newsApiKey}&pageSize=100&q=${searchWord}
-*/
