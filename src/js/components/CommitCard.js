@@ -1,10 +1,11 @@
 export class CommitCard {
-    constructor(name, email, date, message, avatar) {
+    constructor(name, email, date, message, avatar, func) {
         this.name = name;
         this.email = email;
         this.date = date;
         this.message = message;
         this.avatar = avatar;
+        this.func = func;
     }
 
     create() {
@@ -13,7 +14,7 @@ export class CommitCard {
         commit.classList.add('commit');
 
         commit.insertAdjacentHTML('afterbegin',
-       `<p class="commit__date">${this.date}</p>
+       `<p class="commit__date">${this.func(this.date)}</p>
         <div class="commit__avatar"></div>
         <div class="commit__author-info">
             <h3 class="commit__author-name">${this.name}</h3>

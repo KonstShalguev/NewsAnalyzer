@@ -4,10 +4,7 @@ export class SearchInput {
         this.func = func;
     }
 
-    setEventListeners(){
-        this.form.addEventListener('submit', function(event){
-            event.preventDefault();
-            this.func;
-        })
+    setEventListeners() {
+        this.form.addEventListener('submit', this.func);
     }
 }

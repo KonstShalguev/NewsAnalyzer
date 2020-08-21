@@ -195,6 +195,8 @@ form {
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
+
+  display: none;
 }
 
 .results__cards {
@@ -332,6 +334,8 @@ form {
   line-height: 24px;
   color: #1A1B22;
   cursor: pointer;
+
+  display: none;
 }
 
 .results__button-show-more:hover {
@@ -422,6 +426,15 @@ form {
     padding-bottom: 44px;
   }
 }
+
+/* изменение размена формы */
+@media screen and (min-width: 330px) and (max-width: 550px) {
+  .input__search, .search__form-button {
+    width: 100%;
+  } 
+}
+
+
 
 /*768 1339*/
 @media screen and (min-width: 768px) and (max-width: 1339px) {
