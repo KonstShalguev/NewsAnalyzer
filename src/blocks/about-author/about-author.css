@@ -13,6 +13,11 @@
 
 .about-author__avatar {
   max-width: 464px;
+  
+}
+
+.about-author__avatar-mobile {
+  width: 100%;
 }
 
 .about-author__info-wrapper {
