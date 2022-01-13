@@ -1,11 +1,11 @@
+@import url(../../node_modules/swiper/swiper-bundle.min.css);
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-@import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/page/page.css);
 @import url(../blocks/about-author/about-author.css);
 @import url(../blocks/section-title/section-title.css);
-@import url(../blocks/footer/footer.css);
-
 
 /* SWIPER */
 
@@ -193,15 +193,6 @@
     align-items: first baseline;
 }
 
-/* карусель */
-
-/* .commits {
-    width: 100%;
-    min-height: 288px;
-    box-sizing: border-box;
-    position: relative;
-} */
-
 .commits:before {
     z-index: 2;
     content: "";
@@ -226,23 +217,11 @@
     /* border: 1px solid red; */
 }
 
-/* .commits__content-wrapper {
-
-    display: grid;
-    grid-template-columns: repeat(5, 400px);
-    scrollbar-width: none;
-    overflow: auto;
-    justify-content: center;
-    grid-column-gap: 16px;
-    margin: 0 auto;
-} */
-
 .commit {
     padding: 24px;
     background: #FFFFFF;
     border-radius: 16px;
     box-sizing: border-box;
-    /* margin: 0 auto; */
     max-width: 400px;
     min-height: 288px;
     display: grid;
